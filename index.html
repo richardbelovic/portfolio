@@ -47,7 +47,7 @@
                   <p class="card-text">2D side-scroller where you play as Johnny, on a quest to save his ducky. The player has to traverse multiple regions, featuring challenging levels with a variety of traps and two boss encounters.</p>
                   <div class="d-flex justify-content-between align-items-center">
                      <div class="btn-group">
-                        <button type="button" class="btn btn-outline-secondary">Details</button>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#johnnymodal">Details</button>
                      </div>
                   </div>
                   
@@ -116,6 +116,62 @@
             </div>
          </div>
       </main>
+      <!-- JOHNNY'S DEATHWISH MODAL-->
+      <div class="modal fade" id="johnnymodal" tabindex="-1" aria-labelledby="johnnymodal" aria-hidden="true">
+        <div class="modal-dialog model-dialog-scrollable modal-fullscreen-sm-down" style="min-width: 80%;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="container-fluid">
+                <div class="row justify-content-center">
+                  <div class="col-8 col-xl-6 col-md-12">
+                    <h5 class="modal-title"  id="exampleModalLabel">Johnny's Deathwish</h5>
+                    <!--<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row justify-content-center">
+                  <div class="col-8 col-xl-6 col-md-12">
+                    Team Members:
+                    <ul>
+                      <li>Richard Belovic - Programmer</li>
+                      <li>Angus Jardine - Artist</li>
+                    </ul>
+                    After completing Doris, Angus and I set on making a larger and more polished project. We decided on making Johnny's Deathwish, a challenging 2D sidescroller.
+                    <img style="width: 100%; margin: 10px 0 10px 0;" src="gifs/johnny/johnnyclip1.gif" alt="Card image cap">
+                    The goal of this project was to create our own polished 2D character controller that we could throw into a bunch of levels with a variety of traps.
+                    <br>
+                    Instead of waiting to finish the game, we were sending builds to our friends almost every week from the start in order to get feedback on the feel of the character and the difficulty of the levels. This helped us find bugs that we were previously unaware of, which was a massive improvement over our first project - Doris.
+                    <br>
+                    The biggest challenge in the making of this project was the creation of the character controller as it needed to be able slide down and climb between walls, with many different potential edge-case scenarios that could break it.
+                    <img style="width: 100%; margin: 10px 0 10px 0;" src="gifs/johnny/johnnyclip2.gif" alt="Card image cap">
+                    Angus and I worked on a large array of traps:
+                    <ul>
+                      <li>Boulders</li>
+                      <li>Spikes</li>
+                      <li>Saws</li>
+                      <li>Timed Lasers</li>
+                      <li>Turrets</li>
+                      <li>Swinging blades</li>
+                    </ul>
+                    We used these to create a variety of challenges for the player to overcome, and to avoid overuse of the same traps in different levels.
+                    <img style="width: 100%; margin: 10px 0 10px 0;" src="gifs/johnny/johnnyclip3.gif" alt="Card image cap">
+                    The later levels feature 'Builder' AI, they're capable of jumping over pitfalls and climbing walls in order to hunt the player down. These were by far the most fun to program and test.
+                    <img style="width: 100%; margin: 10px 0 10px 0;" src="gifs/johnny/johnnyclip4.gif" alt="Card image cap">
+                    
+                    <img style="width: 100%; margin: 10px 0 10px 0;" src="gifs/johnny/johnnyclip5.gif" alt="Card image cap">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <script src="js/bootstrap.bundle.min.js"></script>
    </body>
 </html>
